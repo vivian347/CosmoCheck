@@ -1,0 +1,180 @@
+[versions]
+agp = "9.2.1"
+kotlin                      = "2.2.10"
+kotlinx-coroutines          = "1.8.1"
+kotlinx-serialization-json  = "1.7.3"
+coreKtx = "1.19.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+lifecycleRuntimeKtx = "2.10.0"
+activityCompose = "1.13.0"
+composeBom = "2026.05.01"
+appcompat = "1.7.1"
+material = "1.14.0"
+navigation-compose          = "2.9.8"
+hilt                        = "2.59.2"
+hilt-navigation-compose     = "1.3.0"
+room                        = "2.8.4"
+datastore                   = "1.2.1"
+camerax                     = "1.6.1"
+biometric                   = "1.2.0-alpha05"
+play-services-location      = "21.3.0"
+# ── Testing ─────────────────────────────────────────────
+junit5                      = "6.1.0"
+junit5-android-plugin        = "2.0.1"   # mannodermaus plugin
+mockk                       = "1.14.11"
+turbine                     = "1.2.1"
+kotlinx-coroutines-test     = "1.8.1"       # same as kotlinx-coroutines
+robolectric                 = "4.16.1"
+espresso                    = "3.7.0"
+androidx-test-runner        = "1.7.0"
+androidx-test-rules         = "1.7.0"
+compose-ui-test             = "1.7.5"
+androidBuiltInKotlin = "9.2.1"
+materialVersion = "1.14.0"       # pin if not using BOM
+
+
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3-adaptive-navigation-suite = { group = "androidx.compose.material3", name = "material3-adaptive-navigation-suite" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-core     = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core",    version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-android  = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-serialization-json  = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+core-ktx                    = { group = "androidx.core",          name = "core-ktx",                  version.ref = "coreKtx" }
+activity-compose            = { group = "androidx.activity",      name = "activity-compose",           version.ref = "activityCompose" }
+# ── Lifecycle / ViewModel ───────────────────────────────
+lifecycle-viewmodel-ktx     = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx",         version.ref = "lifecycleRuntimeKtx" }
+lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose",     version.ref = "lifecycleRuntimeKtx" }
+lifecycle-runtime-ktx       = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx",           version.ref = "lifecycleRuntimeKtx" }
+lifecycle-runtime-compose   = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose",       version.ref = "lifecycleRuntimeKtx" }
+# ── Compose (versions from BOM — no version.ref needed) ─
+compose-ui                  = { group = "androidx.compose.ui",    name = "ui" }
+compose-ui-graphics         = { group = "androidx.compose.ui",    name = "ui-graphics" }
+compose-ui-tooling-preview  = { group = "androidx.compose.ui",    name = "ui-tooling-preview" }
+compose-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts" }
+compose-ui-test-junit4      = { group = "androidx.compose.ui",    name = "ui-test-junit4" }
+compose-foundation          = { group = "androidx.compose.foundation", name = "foundation" }
+compose-foundation-layout   = { group = "androidx.compose.foundation", name = "foundation-layout" }
+compose-material3           = { group = "androidx.compose.material3",  name = "material3" }
+compose-animation           = { group = "androidx.compose.animation",  name = "animation" }
+compose-runtime             = { group = "androidx.compose.runtime",    name = "runtime" }
+
+# ── Navigation ──────────────────────────────────────────
+navigation-compose          = { group = "androidx.navigation",    name = "navigation-compose",         version.ref = "navigation-compose" }
+# ── Hilt ────────────────────────────────────────────────
+hilt-android                = { group = "com.google.dagger",      name = "hilt-android",               version.ref = "hilt" }
+hilt-core                   = { group = "com.google.dagger",      name = "hilt-core",                  version.ref = "hilt" }
+hilt-compiler               = { group = "com.google.dagger",      name = "hilt-android-compiler",      version.ref = "hilt" }
+hilt-navigation-compose     = { group = "androidx.hilt",          name = "hilt-navigation-compose",    version.ref = "hilt-navigation-compose" }
+# ── Room ────────────────────────────────────────────────
+room-runtime                = { group = "androidx.room",          name = "room-runtime",               version.ref = "room" }
+room-ktx                    = { group = "androidx.room",          name = "room-ktx",                   version.ref = "room" }
+room-compiler               = { group = "androidx.room",          name = "room-compiler",              version.ref = "room" }
+# ── DataStore ───────────────────────────────────────────
+datastore-preferences       = { group = "androidx.datastore",     name = "datastore-preferences",      version.ref = "datastore" }
+# ── CameraX ─────────────────────────────────────────────
+camerax-core                = { group = "androidx.camera",        name = "camera-core",                version.ref = "camerax" }
+camerax-camera2             = { group = "androidx.camera",        name = "camera-camera2",             version.ref = "camerax" }
+camerax-lifecycle           = { group = "androidx.camera",        name = "camera-lifecycle",           version.ref = "camerax" }
+camerax-view                = { group = "androidx.camera",        name = "camera-view",                version.ref = "camerax" }
+# ── Biometric ───────────────────────────────────────────
+biometric                   = { group = "androidx.biometric",     name = "biometric",                  version.ref = "biometric" }
+# ── Location ────────────────────────────────────────────
+play-services-location      = { group = "com.google.android.gms", name = "play-services-location",    version.ref = "play-services-location" }
+# ── Testing — JUnit 5 ───────────────────────────────────
+junit5-api                  = { group = "org.junit.jupiter",      name = "junit-jupiter-api",          version.ref = "junit5" }
+junit5-engine               = { group = "org.junit.jupiter",      name = "junit-jupiter-engine",       version.ref = "junit5" }
+junit5-params               = { group = "org.junit.jupiter",      name = "junit-jupiter-params",       version.ref = "junit5" }
+# ── Testing — MockK ─────────────────────────────────────
+mockk                       = { group = "io.mockk",               name = "mockk",                      version.ref = "mockk" }
+mockk-android               = { group = "io.mockk",               name = "mockk-android",              version.ref = "mockk" }
+# ── Testing — Turbine (Flow testing) ────────────────────
+turbine                     = { group = "app.cash.turbine",       name = "turbine",                    version.ref = "turbine" }
+# ── Testing — Coroutines ────────────────────────────────
+kotlinx-coroutines-test     = { group = "org.jetbrains.kotlinx",  name = "kotlinx-coroutines-test",   version.ref = "kotlinx-coroutines-test" }
+# ── Testing — Robolectric ───────────────────────────────
+robolectric                 = { group = "org.robolectric",        name = "robolectric",                version.ref = "robolectric" }
+# ── Testing — Espresso ──────────────────────────────────
+espresso-core               = { group = "androidx.test.espresso", name = "espresso-core",              version.ref = "espresso" }
+# ── Testing — AndroidX Test ─────────────────────────────
+androidx-test-runner        = { group = "androidx.test",          name = "runner",                     version.ref = "androidx-test-runner" }
+androidx-test-rules         = { group = "androidx.test",          name = "rules",                      version.ref = "androidx-test-rules" }
+material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+
+[bundles]
+compose = [
+    "compose-ui",
+    "compose-ui-graphics",
+    "compose-ui-tooling-preview",
+    "compose-foundation",
+    "compose-foundation-layout",
+    "compose-material3",
+    "compose-animation",
+    "compose-runtime",
+    "androidx-compose-material3-adaptive-navigation-suite",
+    "androidx-compose-ui-tooling-preview",
+    "compose-google-fonts"
+]
+
+lifecycle = [
+    "lifecycle-viewmodel-ktx",
+    "lifecycle-viewmodel-compose",
+    "lifecycle-runtime-ktx",
+    "lifecycle-runtime-compose",
+]
+
+camerax = [
+    "camerax-core",
+    "camerax-camera2",
+    "camerax-lifecycle",
+    "camerax-view",
+]
+
+room = [
+    "room-runtime",
+    "room-ktx",
+]
+
+coroutines = [
+    "kotlinx-coroutines-core",
+    "kotlinx-coroutines-android",
+]
+
+# Used in testImplementation blocks across :domain, :data:*, :feature:*
+testing-unit                = [
+    "junit5-api",
+    "junit5-params",
+    "mockk",
+    "turbine",
+    "kotlinx-coroutines-test",
+]
+
+# Used in androidTestImplementation blocks in :feature:* and :app
+testing-android             = [
+    "espresso-core",
+    "androidx-test-runner",
+    "androidx-test-rules",
+    "compose-ui-test-junit4",
+]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version = "2.3.2" }
+junit5-android = { id = "de.mannodermaus.android-junit5", version.ref = "junit5-android-plugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+android-built-in1-kotlin = { id = "com.android.built-in-kotlin", version.ref = "androidBuiltInKotlin" }
+
